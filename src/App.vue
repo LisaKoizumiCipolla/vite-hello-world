@@ -1,17 +1,15 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import NewHeader from './components/NewHeader.vue';
+import Header from './components/Header.vue';
+import NotHeader from './components/NotHeader.vue';
 </script>
 
 <template>
+  <header>
+    <Header />
+  </header>
   <div>
-    <NewHeader />
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <NotHeader />
+    
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
